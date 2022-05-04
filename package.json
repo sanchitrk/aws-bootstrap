@@ -4,7 +4,12 @@
   "description": "AWS Bootstrap Nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pm2-start": "node ./node_modules/pm2/bin/pm2 start ./src/index.js -i max --name aws-bootstrap-nodejs",
+    "pm2-stop": "node ./node_modules/pm2/bin/pm2 stop aws-bootstrap-nodejs",
+    "pm2-restart": "node ./node_modules/pm2/bin/pm2 restart aws-bootstrap-nodejs",
+    "pm2-reload": "node ./node_modules/pm2/bin/pm2 reload aws-bootstrap-nodejs",
+    "pm2-delete": "node ./node_modules/pm2/bin/pm2 delete aws-bootstrap-nodejs"
   },
   "repository": {
     "type": "git",
@@ -18,5 +23,8 @@
   "homepage": "https://github.com/sanchitrk/aws-bootstrap-nodejs#readme",
   "devDependencies": {
     "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "pm2": "^5.2.0"
   }
 }
