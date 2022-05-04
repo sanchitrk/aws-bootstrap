@@ -20,6 +20,6 @@ aws cloudformation deploy \
 
 if [ $? -eq 0 ]; then
   aws cloudformation list-exports \
-    --profile awsbootstrap \
+    --profile default \
     --query "Exports[?Name=='InstanceEndpoint'].Value"
 fi
