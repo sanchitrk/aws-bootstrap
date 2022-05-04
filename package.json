@@ -1,0 +1,22 @@
+{
+  "name": "aws-bootstrap-nodejs",
+  "version": "1.0.0",
+  "description": "AWS Bootstrap Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanchitrk/aws-bootstrap-nodejs.git"
+  },
+  "author": "Sanchit Rk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanchitrk/aws-bootstrap-nodejs/issues"
+  },
+  "homepage": "https://github.com/sanchitrk/aws-bootstrap-nodejs#readme",
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}
