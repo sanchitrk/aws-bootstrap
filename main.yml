@@ -83,7 +83,7 @@ Resources:
               source: !Sub "https://aws-codedeploy-${AWS::Region}.s3.amazonaws.com/latest/install"
               mode: "000755"
           commands:
-            00-install-cd-agent: ③
+            00-install-cd-agent:
               command: "./install auto"
               cwd: "/home/ec2-user/"
     Properties:
