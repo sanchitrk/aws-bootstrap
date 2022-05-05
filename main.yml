@@ -168,8 +168,8 @@ Resources:
       ServiceRoleArn: !GetAtt DeploymentRole.Arn
       Ec2TagFilters:
         - Key: aws:cloudformation:stack-name
-        Type: KEY_AND_VALUE
-        Value: !Ref AWS::StackName
+          Type: KEY_AND_VALUE
+          Value: !Ref AWS::StackName
 
   Pipeline:
     Type: AWS::CodePipeline::Pipeline
