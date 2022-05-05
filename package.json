@@ -2,14 +2,15 @@
   "name": "aws-bootstrap-nodejs",
   "version": "1.0.0",
   "description": "AWS Bootstrap Nodejs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pm2-start": "node ./node_modules/pm2/bin/pm2 start server.js -i max --name aws-bootstrap-nodejs",
     "pm2-stop": "node ./node_modules/pm2/bin/pm2 stop aws-bootstrap-nodejs",
     "pm2-restart": "node ./node_modules/pm2/bin/pm2 restart aws-bootstrap-nodejs",
     "pm2-reload": "node ./node_modules/pm2/bin/pm2 reload aws-bootstrap-nodejs",
-    "pm2-delete": "node ./node_modules/pm2/bin/pm2 delete aws-bootstrap-nodejs"
+    "pm2-delete": "node ./node_modules/pm2/bin/pm2 delete aws-bootstrap-nodejs",
+    "build": "echo 'Building...'"
   },
   "repository": {
     "type": "git",
