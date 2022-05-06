@@ -3,6 +3,8 @@
 const { hostname } = require("os");
 const http = require("http");
 
+const port = 8080;
+
 const message = `Hello World from ${hostname()}\n`;
 
 const server = http.createServer((req, res) => {
