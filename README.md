@@ -1,0 +1,1 @@
+### multi server setup via EC2 template
